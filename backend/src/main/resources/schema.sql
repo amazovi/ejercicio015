@@ -1,0 +1,12 @@
+CREATE TABLE animal (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    tipo VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE detalle (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    descripcion VARCHAR(255) NOT NULL,
+    animal_id BIGINT,
+    FOREIGN KEY (animal_id) REFERENCES animal(id)
+);

@@ -1,0 +1,21 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Directory for Maven
+target/
+
+# IDE files
+.idea/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# H2 database
+*.h2.db
+*.h2.log
+*.h2.lock
